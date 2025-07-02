@@ -2,7 +2,7 @@
 
 A smart and secure web app that checks how strong your password is and whether it's been exposed in known data breaches. Built using Python and Streamlit, it gives real-time strength analysis, visual feedback, and safe password suggestions.
 
-👉 **[Live Demo](https://ai-password-strength-leak-checker-fkuanq9yfzwhk3wffqncoo.streamlit.app/)**  
+👉 **[Live Demo](https://ai-password-strength-leak-checker-nr5.streamlit.app/)**  
 📂 **[Source Code](https://github.com/devvsingh/AI-Password-Strength-Leak-Checker)**
 
 ---
