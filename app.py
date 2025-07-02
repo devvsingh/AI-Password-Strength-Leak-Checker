@@ -5,7 +5,7 @@ import re
 import secrets
 import string
 
-# --- Function: Check password strength level and details ---
+# Check password strength level and details
 def check_strength(password):
     length = len(password)
     has_digit = re.search(r"\d", password) is not None
@@ -42,7 +42,7 @@ def check_strength(password):
 
     return strength, percent, color, checks
 
-# --- Function: Check if password was leaked ---
+# Check if password was leaked
 def check_password_leak(password):
     sha1 = hashlib.sha1(password.encode("utf-8")).hexdigest().upper()
     prefix = sha1[:5]
@@ -60,7 +60,7 @@ def check_password_leak(password):
             return int(count)
     return 0
 
-# --- Function: Generate strong password ---
+# Generate strong password 
 def generate_strong_password(length=12):
     alphabet = string.ascii_letters + string.digits + string.punctuation
     while True:
@@ -69,7 +69,7 @@ def generate_strong_password(length=12):
             re.search(r"[a-z]", pwd) and re.search(r"[\W_]", pwd)):
             return pwd
 
-# --- Streamlit UI ---
+# Streamlit UI 
 st.set_page_config(page_title="Password Strength & Leak Checker", layout="centered")
 st.title("🔐 Password Strength & Leak Checker")
 st.write("Check password security and get suggestions to improve it.")
